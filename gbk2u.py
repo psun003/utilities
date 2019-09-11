@@ -1,21 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
+#!/usr/bin/env python3
 
 import csv
 import os
 
-
-# In[12]:
-
-
-directory = os.path.join("C:\\Users\\pu.sun\\OneDrive - Keppel Group\\Work\\KIH_Audit\\Emma")
-
-
-# In[15]:
-
+directory = os.path.join("C:\\") #the location of your csv file
 
 for root,dirs,files in os.walk(directory):
     for file in files:
@@ -29,10 +17,3 @@ for root,dirs,files in os.walk(directory):
                     output_file.write(row1+'\n')
                 output_file.close()
             f.close()
-
-
-# In[ ]:
-
-
-
-
